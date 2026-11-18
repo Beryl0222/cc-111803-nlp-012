@@ -1,0 +1,35 @@
+{
+  "samples": [
+    {
+      "batch": "B17",
+      "sample": "X7",
+      "children": [
+        "X7-a",
+        "X7-b"
+      ]
+    },
+    {
+      "batch": "B18",
+      "sample": "X7",
+      "children": [
+        "X7-c"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "MEAS-1",
+      "sample": "X7-a"
+    },
+    {
+      "id": "MEAS-2",
+      "sample": "X7-c"
+    }
+  ],
+  "signed_inclusions": [
+    {
+      "analysis": "AN-1",
+      "result": "MEAS-1"
+    }
+  ]
+}
