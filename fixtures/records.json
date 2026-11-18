@@ -1,0 +1,14 @@
+[
+  {
+    "record_id": "log-a",
+    "source": "lab-notebook",
+    "revision": 1,
+    "text": "批次 B17 样本 X7 解冻一次后完成测定。"
+  },
+  {
+    "record_id": "log-b",
+    "source": "instrument-log",
+    "revision": 1,
+    "text": "批次 B18 样本 X7 记录三次冻融，时间为 14:03。"
+  }
+]
