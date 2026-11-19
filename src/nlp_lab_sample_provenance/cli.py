@@ -8,7 +8,7 @@ from .workflow import TextWorkflow
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description='本地文本记录工作区')
-    parser.add_argument('action', choices=['ingest', 'list', 'business'])
+    parser.add_argument('action', choices=['ingest', 'list', 'notes', 'business'])
     parser.add_argument('input', nargs='?')
     parser.add_argument('--source')
     parser.add_argument('--business-file', default='fixtures/business.json')
@@ -19,6 +19,8 @@ def main(argv=None):
             parser.error('ingest 需要输入 JSON 文件')
         values = json.loads(Path(args.input).read_text(encoding='utf-8'))
         result = workflow.ingest(values)
+    elif args.action == 'notes':
+        result = workflow.note_facts(args.source)
     elif args.action == 'business':
         result = workflow.business_summary(args.business_file)
     else:

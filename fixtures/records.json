@@ -16,5 +16,23 @@
     "source": "instrument-log",
     "revision": 1,
     "text": "批次 B18 的 X7 记录 14:03，冻融一次。"
+  },
+  {
+    "record_id": "lab-d",
+    "source": "instrument-log",
+    "revision": 1,
+    "text": "批次 B17 的 X7 记录 09:50，冻融一次。"
+  },
+  {
+    "record_id": "lab-e",
+    "source": "handover-note",
+    "revision": 1,
+    "text": "交接登记：第一管 10:00 已登记交接，剩下那管未交接。"
+  },
+  {
+    "record_id": "lab-f",
+    "source": "handover-note",
+    "revision": 2,
+    "text": "补充：该交接发生在分装前。"
   }
 ]

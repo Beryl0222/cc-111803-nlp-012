@@ -1,3 +1,4 @@
+from .notes import parse_records
 from .records import TextRecord
 from .text import normalize_text, tokens
 from .domain import load_facts, summarize
@@ -24,6 +25,12 @@ class TextWorkflow:
             records = [record for record in records if record['source'] == source]
         return records
 
+
+    def note_facts(self, source=None):
+        records = self.repository.read()
+        if source is not None:
+            records = [record for record in records if record['source'] == source]
+        return parse_records(records)
 
     def business_summary(self, path):
         return summarize(load_facts(path))

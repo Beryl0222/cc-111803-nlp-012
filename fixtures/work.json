@@ -9,6 +9,13 @@
       "label": "已登记交接",
       "at": "2026-11-18T10:00:00",
       "before_split": true
+    },
+    {
+      "batch": "B17",
+      "container": "X7-a",
+      "label": "复测登记",
+      "at": "2026-11-18T10:05:00",
+      "before_split": false
     }
   ],
   "measurements": [
@@ -29,6 +36,18 @@
       "batch": "B18",
       "sample": "X7-c",
       "at": "2026-11-18T10:20:00"
+    },
+    {
+      "id": "MEAS-4",
+      "batch": "B17",
+      "sample": "第一管",
+      "at": "2026-11-18T10:30:00"
+    },
+    {
+      "id": "MEAS-5",
+      "batch": "B17",
+      "sample": "剩下那管",
+      "at": "2026-11-18T10:40:00"
     }
   ]
 }
